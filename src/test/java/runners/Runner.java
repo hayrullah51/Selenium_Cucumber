@@ -6,9 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin={"html:target\\cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"},
         features = "src/test/recources/features",
         glue = "stepdefinition",
-        tags = "@CH",
+        tags = "@CH2",
 
         dryRun = false
         // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir

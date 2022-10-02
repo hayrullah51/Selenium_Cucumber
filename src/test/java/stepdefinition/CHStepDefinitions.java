@@ -47,4 +47,8 @@ public class CHStepDefinitions {
         Assert.assertTrue(chPage.yanlisGirisText.isDisplayed());
     }
 
+    @Then("CH basarili giris yapildigini test eder")
+    public void chBasariliGirisYapildiginiTestEder() {
+
+    }
 }
