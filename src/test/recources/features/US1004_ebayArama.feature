@@ -1,10 +1,11 @@
+
 Feature: US1004 bestbuy sayfasinda kelime arama
 
   Scenario: TC08 kullanici istedigi kelimeyi aratip test eder
 
-    Given kullanici"ebay" sayfasina gider
+    Given kullanici "ebayUrl" sayfasina gider
     Then "nutella" icin arama yapar
-    And  sonucun {nutella} icerdigini test eder
+    And  sonucun "nutella" icerdigini test eder
     Then sayfayi kapatir
 
      # burada tum stepdefiniton'lar tanimli gibi gorunse de testimiz calismaz

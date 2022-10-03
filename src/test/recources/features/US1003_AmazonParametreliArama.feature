@@ -1,11 +1,12 @@
+@Paralel2
 Feature: US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder
 
   @amazonn
   Scenario: TC07 istenen kelimenin oldugunu test etme
 
     Given kullanici "amazonUrl" sayfasina gider
-    And "hayrullah" icin arama yapar
-    Then sonucun "nutella" icerdigini test eder
+    And "iphone" icin arama yapar
+    Then sonucun "iphone" icerdigini test eder
     And sayfayi kapatir
 
     #parametre olarak yzdigimiz kelimeyi stepdefinition'da String olarak kullanilacaksa
